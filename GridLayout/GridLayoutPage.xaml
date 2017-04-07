@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:GridLayout" 
+	BackgroundColor="#1E90FF"
+	x:Class="GridLayout.GridLayoutPage">
+<!--	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />-->
+	<ContentPage.Padding>
+		<Thickness>
+			<Thickness.Top>20</Thickness.Top>
+		</Thickness>
+	</ContentPage.Padding>
+	<!--<ContentPage.Content>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*"></RowDefinition>
+				<RowDefinition Height="*"></RowDefinition>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+
+			<Label Text="Top Left" Grid.Row="0" Grid.Column="0" BackgroundColor="Red" />
+			<Label Text="Bottom Right" Grid.Row="0" Grid.Column="1" BackgroundColor="Green" />
+			<Label Text="Top Left" Grid.Row="1" Grid.Column="0" BackgroundColor="Blue" />
+			<Label Text="Bottom Right" Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow" />
+		</Grid>
+	</ContentPage.Content>-->
+
+
+	<ContentPage.Content>
+		<Grid Margin="40">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="2*" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+
+			<Label x:Name="PhoneNumber" Text="" TextColor="White" FontSize="50" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0" Grid.ColumnSpan="3" />
+
+			<Button Text="1" BackgroundColor="White" FontSize="25" FontAttributes="Bold" TextColor="#2F4F4F" BorderRadius="15" Grid.Row="1" Grid.Column="0" Clicked="Handle_Clicked" />
+			<Button Text="2" BackgroundColor="White" FontSize="25" FontAttributes="Bold" TextColor="#2F4F4F" BorderRadius="15" Grid.Row="1" Grid.Column="1" Clicked="Handle_Clicked" />
+			<Button Text="3" BackgroundColor="White" FontSize="25" FontAttributes="Bold" TextColor="#2F4F4F" BorderRadius="15" Grid.Row="1" Grid.Column="2" Clicked="Handle_Clicked" />
+
+			<Button Text="4" BackgroundColor="White" FontSize="25" FontAttributes="Bold" TextColor="#2F4F4F" BorderRadius="15" Grid.Row="2" Grid.Column="0" Clicked="Handle_Clicked" />
+			<Button Text="5" BackgroundColor="White" FontSize="25" FontAttributes="Bold" TextColor="#2F4F4F" BorderRadius="15" Grid.Row="2" Grid.Column="1" Clicked="Handle_Clicked" />
+			<Button Text="6" BackgroundColor="White" FontSize="25" FontAttributes="Bold" TextColor="#2F4F4F" BorderRadius="15" Grid.Row="2" Grid.Column="2" Clicked="Handle_Clicked" />
+
+			<Button Text="7" BackgroundColor="White" FontSize="25" FontAttributes="Bold" TextColor="#2F4F4F" BorderRadius="15" Grid.Row="3" Grid.Column="0" Clicked="Handle_Clicked" />
+			<Button Text="8" BackgroundColor="White" FontSize="25" FontAttributes="Bold" TextColor="#2F4F4F" BorderRadius="15" Grid.Row="3" Grid.Column="1" Clicked="Handle_Clicked" />
+			<Button Text="9" BackgroundColor="White" FontSize="25" FontAttributes="Bold" TextColor="#2F4F4F" BorderRadius="15" Grid.Row="3" Grid.Column="2" Clicked="Handle_Clicked" />
+
+			<Button Text="0" BackgroundColor="White" FontSize="25" FontAttributes="Bold" TextColor="#2F4F4F" BorderRadius="15" Grid.Row="4" Grid.Column="1" Clicked="Handle_Clicked" />
+
+			<Button Text="撥號" BackgroundColor="#8FBC8F" FontSize="25" FontAttributes="Bold" TextColor="#2F4F4F" BorderRadius="15" Grid.Row="5" Grid.ColumnSpan="3" Clicked="Dial_Clicked" />
+		</Grid>
+	</ContentPage.Content>
+
+	<!--<ContentPage.Content>
+		<Grid RowSpacing="10" Margin="20">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+
+			<StackLayout VerticalOptions="Center" Grid.Row="0">
+				<Label Text="Welcome To Ming Studio" TextColor="White" FontSize="25" HorizontalTextAlignment="Center" />
+				<Label Text="I am Ming Lin" TextColor="White" FontSize="18" HorizontalTextAlignment="Center"/>
+			</StackLayout>
+
+			<Button Text="登入" TextColor="White" BackgroundColor="#00BFFF" Grid.Row="1" />
+			<Button Text="註冊" TextColor="White" BackgroundColor="#00BFFF" Grid.Row="2" />
+		</Grid>
+	</ContentPage.Content>-->
+</ContentPage>
